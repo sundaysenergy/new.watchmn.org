@@ -19,7 +19,7 @@ production_url: "http://sample.com"
 base_path: "/"
 
 theme:
-  name: "twitter"
+  name: "watchmn"
 
 posts:
   permalink: "/:categories/:title/"
