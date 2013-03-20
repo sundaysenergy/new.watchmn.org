@@ -1,13 +1,9 @@
 /* Base */
 
 	.fb-wall{
-		font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 		font-size:13px;
-		width:520px;
 		line-height:1.2em;
-		color:#333333;
-		padding:10px;
-		background-color:#FFF;}
+		padding:10px;}
 		
 	.fb-wall a{
 		text-decoration:none;
@@ -18,7 +14,7 @@
 	
 	.fb-wall.loading{
 		height:300px;
-		background:url(loader-small.gif) no-repeat center center;}
+		background:url(../media/fb.wall/loader-small.gif) no-repeat center center;}
 	
 	.fb-wall-box{
 		margin-bottom:10px;
@@ -110,12 +106,12 @@
 		margin-bottom:2px;
 		display:block;
 		font-size:11px;
-		background:url(like.gif) no-repeat 0 0 #FFF;
+		background:url(../media/fb.wall/like.gif) no-repeat 0 0 #FFF;
 		padding-top:5px;}
 		
 	.fb-wall-likes div{
 		margin:0;
-		background:url(like.gif) no-repeat 0 -5px #EDEFF4;
+		background:url(../media/fb.wall/like.gif) no-repeat 0 -5px #EDEFF4;
 		padding:5px 5px 4px 24px;}
 		
 	.fb-wall-likes div span{
