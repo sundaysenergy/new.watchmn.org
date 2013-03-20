@@ -157,7 +157,7 @@ color:#C30000;
 }
 
 .content ul li{
-background-image:url('../img/list-r.png');
+background-image:url('../media/list-r.png');
 }
 
 .blog .meta i{
@@ -229,5 +229,5 @@ border-top:3px solid #C30000;
 }
 
 footer ul li{
-background-image:url('../img/list-r.png');
+background-image:url('../media/list-r.png');
 }
