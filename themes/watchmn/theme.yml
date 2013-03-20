@@ -8,6 +8,7 @@
          "prettyPhoto.css",
          "red.css",
          "slider.css",
+         "jquery.neosmart.fb.wall.css",
          "style.css",
       ],
      
@@ -27,6 +28,7 @@
          "jquery.isotope.js",
          "jquery.prettyPhoto.js",
          "jquery.tweet.js",
+         "jquery.neosmart.fb.wall.js",
          "modernizr.custom.28468.js",
          "custom.js",
       ]
