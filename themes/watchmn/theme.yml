@@ -21,7 +21,6 @@
       "default" : [
           "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",
          "bootstrap.js",
-         "custom.js",
          "filter.js",
          "jquery.cslider.js",
          "jquery.flexslider-min.js",
@@ -29,6 +28,7 @@
          "jquery.prettyPhoto.js",
          "jquery.tweet.js",
          "modernizr.custom.28468.js",
+         "custom.js",
       ]
     },
     
