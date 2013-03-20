@@ -4,7 +4,7 @@
 /* Facebook */
 $('#facebook-feed').fbWall({
   id:'watchmn',
-  //accessToken:'AAAC7gAoWDQ0BABXU7HrwopzOA8dN8mVqusF2GiyE1jfqjYP0DdhZA0ohzmi777Lccn38l1wHqHkOWYSHb0ZBMZAGZA6NyJr7of94yAWKXgZDZD',
+  accessToken:'AAACEdEose0cBAJKZBaaTdPCZAZAgBvjIQ5g1VPUs0eSTZBWH3ba3cRgTsZBOtS5smb7attcH4K1xON7kAido81enRx6AdGih9fO4uu9GHdAZDZD',
   showGuestEntries:false,
   showComments:true,
   max:2,
