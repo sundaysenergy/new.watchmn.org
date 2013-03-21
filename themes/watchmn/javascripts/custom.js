@@ -10,7 +10,7 @@ $('#facebook-feed').fbWall({
 
 /* Twitter */
 $(document).ready(function() {
-  $.getJSON('http://twitter.supersimple.co/?user=watchmn', function(data) {
+  $.getJSON('http://twitter.supersimple.co/?user=watchmn&tweets=4', function(data) {
     var items = [];
    
     $.each(data, function(key, post) {
