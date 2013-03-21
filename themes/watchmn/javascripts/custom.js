@@ -1,6 +1,3 @@
-
-/* Twitter */
-
 /* Facebook */
 $('#facebook-feed').fbWall({
   id:'watchmn',
@@ -11,41 +8,22 @@ $('#facebook-feed').fbWall({
   timeConversion:24
 });
 
-/* Twitter #1 */
+/* Twitter */
+$(document).ready(function() {
+  $.getJSON('http://twitter.supersimple.co/?user=watchmn', function(data) {
+    var items = [];
+   
+    $.each(data, function(key, post) {
+      items.push('<li>' + post.text + '</li>');
+    });
+   
+    $('<ul/>', {
+      'class': 'tweets',
+      html: items.join('')
+    }).appendTo(".tweet");
+  });
 
-jQuery(function($){
-   $(".tweet").tweet({
-      username: "WATCHMN",
-      join_text: "auto",
-      avatar_size: 0,
-      count: 3,
-      auto_join_text_default: "we said,",
-      auto_join_text_ed: "we",
-      auto_join_text_ing: "we were",
-      auto_join_text_reply: "we replied to",
-      auto_join_text_url: "we were checking out",
-      loading_text: "loading tweets...",
-      template: "{text}"
-   });
-}); 
-
-/* Twitter #2 */
-
-jQuery(function($){
-   $(".ctweet").tweet({
-      username: "WATCHMN",
-      join_text: "auto",
-      avatar_size: 0,
-      count: 1,
-      auto_join_text_default: "we said,",
-      auto_join_text_ed: "we",
-      auto_join_text_ing: "we were",
-      auto_join_text_reply: "we replied to",
-      auto_join_text_url: "we were checking out",
-      loading_text: "loading tweets...",
-      template: "{text}"
-   });
-}); 
+});
 
 /* Support list */
 
