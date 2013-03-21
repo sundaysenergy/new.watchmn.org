@@ -14,11 +14,11 @@ $(document).ready(function() {
     var items = [];
    
     $.each(data, function(key, post) {
-      items.push('<li>' + post.text + '</li>');
+      items.push('<li><span class="tweet_text">' + post.text + '</span></li>');
     });
    
     $('<ul/>', {
-      'class': 'tweets',
+      'class': 'tweet_list',
       html: items.join('')
     }).appendTo(".tweet");
   });
