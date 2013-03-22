@@ -31,7 +31,9 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
   $.each(data, function(key, post) {
     console.log(post)
     $("#da-slide1 p").html(post.message);
-    $("#da-slide1 .da-img").html("<img src=\"" + post.icon + "\" alt=\"" + post.message + "\" />");
+    if (post.icon) {
+      $("#da-slide1 .da-img").html("<img src=\"" + post.icon + "\" alt=\"" + post.message + "\" />");
+    }
   });
 
 });
