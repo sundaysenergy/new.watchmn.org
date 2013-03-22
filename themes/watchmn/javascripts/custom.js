@@ -47,7 +47,7 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
         console.log(post.ss_md5);
         $("#da-slide" + counter + " p").html(post.message);
         $("#da-slide" + counter + " p").linkify("*");
-        $("#da-slide" + counter + " .da-img").html("<img src=\"" + post.picture + "\" alt=\"" + post.name + "\" />");
+        $("#da-slide" + counter + " .da-img").html("<img src=\"" + post.pic_300_160 + "\" alt=\"" + post.name + "\" />");
         /* Truncate the title */
         if (post.name.length > 70) {
           var new_title = post.name.substring(0,70);
