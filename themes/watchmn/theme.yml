@@ -29,6 +29,8 @@
          "jquery.prettyPhoto.js",
          "jquery.neosmart.fb.wall.js",
          "modernizr.custom.28468.js",
+         "jquery.linkify-1.0-min.js",
+         "jquery.linkify-1.0-twitter-min.js",
          "custom.js",
       ]
     },

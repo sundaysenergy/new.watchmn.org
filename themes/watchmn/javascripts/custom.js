@@ -21,6 +21,7 @@ $(document).ready(function() {
       'class': 'tweet_list',
       html: items.join('')
     }).appendTo(".tweet");
+    $(".tweet").linkify("*");
   });
 
 });
