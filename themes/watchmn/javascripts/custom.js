@@ -61,7 +61,7 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
   });
   
   $("#addr_street").html(data[1].location.street);
-  $("#addr_street").html(data[1].location.city + ", " + data[1].location.state + " " + data[1].location.zip);
+  $("#addr_city_state_zip").html(data[1].location.city + ", " + data[1].location.state + " " + data[1].location.zip);
    
 });
 
