@@ -29,15 +29,15 @@ $(document).ready(function() {
   $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) {
     var items = [];
     
-    $.each(data.slice(0,3), function(key, post) {
+    $.each(data, function(key, post) {
       if (post.message) {
         items.push('<li><span class="tweet_text">' + post.message + '</span></li>');
       }
     });
-   
+    var published = items.slice(0,3);
     $('<ul/>', {
       'class': 'tweet_list',
-      html: items.join('')
+      html: published.join('')
     }).appendTo(".fbook");
     $(".fbook").linkify("*");
   });
