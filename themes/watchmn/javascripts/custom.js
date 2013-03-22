@@ -37,7 +37,7 @@ $(document).ready(function() {
 /* Facebook in the slider */
 $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) {
   var counter = 1;
-  
+  console.log(data[1]);
   /* Process each post */
   $.each(data[0], function(key, post) {
     /* If it has a message, a name, and a picture, we'll use it for slider content */
@@ -59,6 +59,8 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
       }
     }
   });
+  
+  $("#addr_street").html(data[1].location.street);
 });
 
 /* Support list */
