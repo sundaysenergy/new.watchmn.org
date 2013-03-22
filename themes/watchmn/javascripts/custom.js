@@ -35,6 +35,9 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
         console.log("Step one!", post, counter);
         $("#da-slide" + counter + " p").html(post.message);
         $("#da-slide" + counter + " .da-img").html("<img src=\"" + post.picture + "\" alt=\"" + post.name + "\" />");
+        if (post.name.length > 20) {
+          post.name = post.name.substring(20) + "...";
+        }
         $("#da-slide" + counter + " h2").html(post.name);
         $("#da-slide" + counter + " .da-link").attr("href", post.link);
         counter++;
