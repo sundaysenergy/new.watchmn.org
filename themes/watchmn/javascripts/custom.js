@@ -60,9 +60,8 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
     }
   });
   
-  var citystatezip = data[1].location.city + ", " data[1].location.state + " " + data[1].location.zip;
   $("#addr_street").html(data[1].location.street);
-  //$("#addr_street").html(data[1].location.city + ", " data[1].location.state + " " + data[1].location.zip);
+  $("#addr_street").html(data[1].location.city + ", " + data[1].location.state + " " + data[1].location.zip);
    
 });
 
