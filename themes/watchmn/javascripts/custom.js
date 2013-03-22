@@ -30,7 +30,9 @@ $(document).ready(function() {
     var items = [];
     
     $.each(data.slice(0,3), function(key, post) {
-      items.push('<li><span class="tweet_text">' + post.message + '</span></li>');
+      if (post.message) {
+        items.push('<li><span class="tweet_text">' + post.message + '</span></li>');
+      }
     });
    
     $('<ul/>', {
