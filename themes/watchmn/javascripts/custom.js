@@ -36,7 +36,7 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
         $("#da-slide" + counter + " p").html(post.message);
         $("#da-slide" + counter + " .da-img").html("<img src=\"" + post.picture + "\" alt=\"" + post.name + "\" />");
         if (post.name.length > 30) {
-          var new_title = post.name.substring(30);
+          var new_title = post.name.substring(0,30);
           post.name = new_title + "...";
         }
         $("#da-slide" + counter + " h2").html(post.name);
