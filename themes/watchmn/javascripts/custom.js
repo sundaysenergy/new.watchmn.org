@@ -8,8 +8,9 @@ $('#facebook-feed').fbWall({
   timeConversion:24
 });
 
-/* Twitter */
+/* Social media widgets */
 $(document).ready(function() {
+  /* Twitter */
   $.getJSON('http://twitter.supersimple.co/?user=watchmn&tweets=4', function(data) {
     var items = [];
    
@@ -24,14 +25,30 @@ $(document).ready(function() {
     $(".tweet").linkify("*");
   });
 
+  /* Facebook */
+  $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) {
+    var items = [];
+    
+    $.each(data.slice(0,3), function(key, post) {
+      items.push('<li><span class="tweet_text">' + post.message + '</span></li>');
+    });
+   
+    $('<ul/>', {
+      'class': 'tweet_list',
+      html: items.join('')
+    }).appendTo(".fbook");
+    $(".fbook").linkify("*");
+  });
+
 });
 
+/* Facebook in the slider */
 $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) {
   var counter = 1;
   
   $.each(data, function(key, post) {
     //console.log(post)
-    if (post.message && post.description && post.picture) {
+    if (post.message && post.name && post.picture) {
       if ($("#da-slide" + counter).length) {
         console.log("Step one!", post, counter);
         $("#da-slide" + counter + " p").html(post.message);
@@ -47,11 +64,9 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
       }
     }
   });
-
 });
 
 /* Support list */
-
 $("#slist a").click(function(e){
    e.preventDefault();
    $(this).next('p').toggle(200);
