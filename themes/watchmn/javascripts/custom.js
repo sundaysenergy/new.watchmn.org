@@ -30,7 +30,7 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
  
   $.each(data, function(key, post) {
     console.log(post)
-    $("#da-slide1").html(post.message);
+    $("#da-slide1 p").html(post.message);
   });
 
 });
