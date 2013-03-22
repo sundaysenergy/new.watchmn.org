@@ -25,6 +25,16 @@ $(document).ready(function() {
 
 });
 
+$.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) {
+  var items = [];
+ 
+  $.each(data, function(key, post) {
+    console.log(post)
+    $("#daslide1").html(post.message);
+  });
+
+});
+
 /* Support list */
 
 $("#slist a").click(function(e){
