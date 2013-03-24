@@ -1,7 +1,7 @@
 /* Social media widgets */
 $(document).ready(function() {
   /* Twitter */
-  $.getJSON('http://twitter.supersimple.co/?user=watchmn&tweets=4', function(data) {
+  $.getJSON('http://twitter.supersimple.co/twitter?user=watchmn&tweets=4', function(data) {
     var items = [];
    
     $.each(data, function(key, post) {
