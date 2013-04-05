@@ -1,7 +1,7 @@
 /* Social media widgets */
 $(document).ready(function() {
   /* Twitter */
-  $.getJSON('http://twitter.supersimple.co/?user=watchmn&tweets=4', function(data) {
+  $.getJSON('http://twitter.cape.io/twitter?user=watchmn&tweets=4', function(data) {
     var items = [];
    
     $.each(data, function(key, post) {
@@ -16,7 +16,7 @@ $(document).ready(function() {
   });
 
   /* Facebook */
-  $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) {
+  $.getJSON('http://twitter.cape.io/facebook?user=watchmn', function(data) {
     var items = [];
     
     $.each(data[0], function(key, post) {
@@ -35,7 +35,7 @@ $(document).ready(function() {
 });
 
 /* Facebook in the slider */
-$.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) {
+$.getJSON('http://twitter.cape.io/facebook?user=watchmn', function(data) {
   var counter = 1;
   console.log(data[1]);
   /* Process each post */
