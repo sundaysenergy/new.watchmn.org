@@ -1,6 +1,17 @@
 {
     "stylesheets" : {
-      [ "default", "newsletter" ] : [
+      "default" : [
+         "bootstrap.css",
+         "bootstrap-responsive.css",
+         "flexslider.css",
+         "font-awesome.css",
+         "prettyPhoto.css",
+         "red.css",
+         "slider.css",
+         "jquery.neosmart.fb.wall.css",
+         "style.css",
+      ],
+      "newsletter" : [
          "bootstrap.css",
          "bootstrap-responsive.css",
          "flexslider.css",
@@ -19,7 +30,21 @@
     },
 
     "javascripts" : {
-      [ "default", "newsletter" ] : [
+      "default" : [
+         "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",
+         "bootstrap.js",
+         "filter.js",
+         "jquery.cslider.js",
+         "jquery.flexslider-min.js",
+         "jquery.isotope.js",
+         "jquery.prettyPhoto.js",
+         "jquery.neosmart.fb.wall.js",
+         "modernizr.custom.28468.js",
+         "jquery.linkify-1.0-min.js",
+         "jquery.linkify-1.0-twitter-min.js",
+         "custom.js",
+      ],
+      "newsletter" : [
          "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",
          "bootstrap.js",
          "filter.js",
