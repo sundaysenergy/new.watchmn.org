@@ -43,8 +43,7 @@ $.getJSON('http://twitter.supersimple.co/facebook?user=watchmn', function(data) 
     /* If it has a message, a name, and a picture, we'll use it for slider content */
     if (post.message && post.name && post.picture) {
       if ($("#da-slide" + counter).length) {
-        console.log("Step one!", post, counter);
-        console.log(post.ss_md5);
+        console.log(post, counter);
         $("#da-slide" + counter + " p").html(post.message);
         $("#da-slide" + counter + " p").linkify("*");
         $("#da-slide" + counter + " .da-img").html("<img src=\"" + post.pic_300_160 + "\" alt=\"" + post.name + "\" />");
