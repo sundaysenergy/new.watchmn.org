@@ -1,6 +1,6 @@
 {
     "stylesheets" : {
-      "default" : [
+      [ "default", "newsletter" ] : [
          "bootstrap.css",
          "bootstrap-responsive.css",
          "flexslider.css",
@@ -19,7 +19,7 @@
     },
 
     "javascripts" : {
-      "default" : [
+      [ "default", "newsletter" ] : [
          "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",
          "bootstrap.js",
          "filter.js",
