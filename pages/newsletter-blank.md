@@ -1,6 +1,0 @@
----
-title: Newletter
-layout: newsletter
----
-
-
